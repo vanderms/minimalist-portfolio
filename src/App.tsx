@@ -1,7 +1,21 @@
+import { Layout } from "./components/layout/layout";
+import { Routes, Route } from "react-router-dom";
+import { ContactPage } from "./pages/contact";
+import { Homepage } from "./pages/homepage";
+import { PortfolioPage } from "./pages/portfolio";
+import { PortfolioSinglePage } from "./pages/portfolio-single";
+
 function App() {
-  return <div className="">
-    <h1 className="title-xl">Olá</h1>
-  </div>;
+  return (
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/portfolio/:slug" element={<PortfolioSinglePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </Layout>
+  );
 }
 
 export default App;
