@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #5fb4a2;
+    --secondary: #203a4c;
+    --danger: #f43030;
+    --neutral-100: #fafafa;
+    --neutral-200: #eaeaeb;
+    --neutral-500: #33323dcc;
+    --neutral-800: #33323d;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+    max-width: 100%;
+  }
+
+  @media screen(sm) {
+    .container {
+      max-width: min(87.2%, 26.25rem);
+    }
+  }
+
+  @media screen(md) {
+    .container {
+      max-width: min(89.71%, 48rem);
+    }
+  }
+
+  @media screen(xl) {
+    .container {
+      max-width: 69.375rem;
+    }
+  }
+
+  @media screen(xxl) {
+    .container {
+      max-width: 77.0833333%;
+    }
+  }
+}
+
+@layer components {
+  .title-xl {
+    font-family: theme(fontFamily.serif);
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    letter-spacing: -0.446429px;
+  }
+
+  .title-md {
+    font-family: theme(fontFamily.serif);
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.357143px;
+  }
+
+  .title-sm {
+    font-family: theme(fontFamily.serif);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.285714px;
+  }
+
+  .body-md {
+    font-family: theme(fontFamily.sans);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  .body-sm {
+    font-family: theme(fontFamily.sans);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.875rem;
+  }
+
+  
+}
