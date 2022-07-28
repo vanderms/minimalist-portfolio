@@ -7,6 +7,7 @@
     --primary: #5fb4a2;
     --secondary: #203a4c;
     --danger: #f43030;
+    --neutral-50: #fff;
     --neutral-100: #fafafa;
     --neutral-200: #eaeaeb;
     --neutral-500: #33323dcc;
@@ -22,7 +23,7 @@
 
   @media screen(sm) {
     .container {
-      max-width: min(87.2%, 26.25rem);
+      max-width: max(87.2%, 19.4375rem);
     }
   }
 
@@ -35,12 +36,6 @@
   @media screen(xl) {
     .container {
       max-width: 69.375rem;
-    }
-  }
-
-  @media screen(xxl) {
-    .container {
-      max-width: 77.0833333%;
     }
   }
 }
@@ -83,6 +78,4 @@
     font-size: 0.9375rem;
     line-height: 1.875rem;
   }
-
-  
 }
