@@ -1,8 +1,10 @@
+import { ActionLink } from "../buttons/action-link";
+
 export function AboutSection() {
   return (
-    <section className="py-14" id="about">
-      <div className="container grid grid-cols-1 md:grid-cols-[281fr,339fr] md:gap-[4.3125rem]">
-        <picture className="relative pb-[111.2540193%] md:pb-[213.5231317%]">
+    <section className="pt-14 md:pt-24 xl:mt-[3.375rem]" id="about">
+      <div className="container grid grid-cols-1 md:grid-cols-[281fr,339fr] md:gap-[4.3125rem] xl:grid-cols-[33.75rem,21.25rem] xl:gap-[7.8125rem]">
+        <picture className="relative pb-[111.2540193%] md:pb-[213.5231317%] xl:pb-[111.1111111%]">
           <source
             media="(min-width: 74rem)"
             srcSet="/assets/homepage/desktop/image-homepage-profile@2x.jpg"
@@ -17,8 +19,8 @@ export function AboutSection() {
             className="absolute top-0 left-0 w-full h-full object-cover object-center"
           />
         </picture>
-        <header>
-          <h2 className="mt-16 title-md text-neutral-800">About Me</h2>
+        <header className="md:border-y md: md:border-[#33323D26]">
+          <h2 className="mt-16 title-md text-neutral-800 md:mt-[3.125rem]">About Me</h2>
           <p className="body-md text-neutral-500 mt-7">
             I&apos;m a junior front-end developer looking for a new role in an exciting
             company. I focus on writing accessible HTML, using modern CSS practices and
@@ -29,6 +31,11 @@ export function AboutSection() {
             whether that&apos;s going for a walk, run or cycling. I&apos;d love you to check
             out my work.
           </p>
+          <div className="mt-6">
+            <ActionLink type="secondary" router={true} to="/portfolio">
+              GO TO PORTFOLIO
+            </ActionLink>
+          </div>
         </header>
       </div>
     </section>

@@ -48,6 +48,31 @@ const PrimaryLink: React.FC<Props> = (props) => {
   );
 };
 
+const SecondaryLink: React.FC<Props> = (props) => {
+  if (props.router) {
+    return (
+      <Link
+        to={props.to}
+        className="h-12 w-max px-9 flex items-center text-[0.75rem] text-neutral-800 border border-neutral-800 hover:bg-neutral-800 hover:text-neutral-50"
+      >
+        {props.children}
+      </Link>
+    );
+  }
+  return (
+    <a
+      href={props.to}
+      className="h-12 w-max px-9 flex items-center text-[0.75rem] text-neutral-800 border border-neutral-800 hover:bg-neutral-800 hover:text-neutral-50"
+    >
+      {props.children}
+    </a>
+  );
+};
+
 export const ActionLink: React.FC<Props> = (props) => {
-  return props.type === "primary" ? <PrimaryLink {...props} /> : <></>;
+  return props.type === "primary" ? (
+    <PrimaryLink {...props} />
+  ) : (
+    <SecondaryLink {...props} />
+  );
 };
