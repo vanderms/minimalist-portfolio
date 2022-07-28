@@ -7,7 +7,7 @@ export const ProjectCard: React.FC<{ inverse: boolean; project: string }> = (pro
   const project = getProject(props.project);
 
   const thumbnail = (viewport: string) =>
-    `/assets/portfolio/${viewport}/image-portolio-${project!.name.toLowerCase()}.jpg`;
+    `/assets/portfolio/${viewport}/image-portfolio-${project!.name.toLowerCase()}@2x.jpg`;
 
   return (
     <article
