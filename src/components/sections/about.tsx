@@ -19,8 +19,8 @@ export function AboutSection() {
             className="absolute top-0 left-0 w-full h-full object-cover object-center"
           />
         </picture>
-        <header className="md:border-y md: md:border-[#33323D26]">
-          <h2 className="mt-16 title-md text-neutral-800 md:mt-[3.125rem]">About Me</h2>
+        <header className="py-8 mt-8 border-y border-[#33323D26] md:mt-0 md:py-[3.125rem]">
+          <h2 className="title-md text-neutral-800">About Me</h2>
           <p className="body-md text-neutral-500 mt-7">
             I&apos;m a junior front-end developer looking for a new role in an exciting
             company. I focus on writing accessible HTML, using modern CSS practices and
