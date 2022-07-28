@@ -6,7 +6,7 @@ const LinkItem: React.FC<{ to: string; children: React.ReactNode }> = (props) =>
     <li className="contents">
       <Link
         to={props.to}
-        className={`text-[0.75rem] leading-[0.875rem] tracking-[0.125rem] text-neutral-50`}
+        className={`text-[0.75rem] leading-[0.875rem] tracking-[0.125rem] text-neutral-50 hover:underline`}
       >
         {props.children}
       </Link>

@@ -8,7 +8,7 @@ const LinkItem: React.FC<{ to: string; children: React.ReactNode }> = (props) =>
       <NavLink
         to={props.to}
         className={`text-[0.75rem] leading-[0.875rem] tracking-[0.125rem] text-neutral-50 
-        md:text-neutral-800 md:[&.active]:text-primary`}
+        md:text-neutral-800 md:[&.active]:text-primary md:hover:underline`}
       >
         {props.children}
       </NavLink>

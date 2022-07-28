@@ -18,7 +18,7 @@ export function CallToActionSection() {
         </h2>
         <div className="hidden md:block md:grow md:border md:border-[#33323D26]"></div>
         <div className="flex justify-center">
-          <ActionLink type="secondary" router={true} to="contact">
+          <ActionLink type="secondary" router={true} to="/contact">
             CONTACT ME
           </ActionLink>
         </div>
