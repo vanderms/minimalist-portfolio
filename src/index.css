@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: theme(fontFamily.sans);
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
   :root {
     --primary: #5fb4a2;
     --secondary: #203a4c;
@@ -18,7 +26,7 @@
 @layer components {
   .container {
     @apply mx-auto;
-    max-width: 100%;
+    max-width: 96%;
   }
 
   @media screen(sm) {
