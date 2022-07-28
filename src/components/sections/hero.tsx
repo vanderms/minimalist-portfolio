@@ -1,5 +1,5 @@
 import { useId } from "react";
-import { ActionLinkPrimary } from "../buttons/action-link-primary";
+import { ActionLink } from "../buttons/action-link";
 
 export function HeroSection() {
   const id = useId();
@@ -22,11 +22,13 @@ export function HeroSection() {
           />
         </picture>
         <header className="md:absolute md:bottom-0 md:left-0 md:bg-neutral-100 md:w-[32.125rem] md:pt-14 md:pr-14 xl:w-[27.8125rem]">
-          <h1 id={id} className="mt-6 title-md md:mt-0 xl:title-xl">
+          <h1 id={id} className="mt-6 title-md md:mt-0 xl:title-xl text-neutral-800">
             Hey, I&apos;m Alex Spencer and I love building beautiful websites
           </h1>
           <div className="mt-8 md:mt-12 xl:mt-[3.3125rem]">
-            <ActionLinkPrimary to="/#about">ABOUT ME</ActionLinkPrimary>
+            <ActionLink to="/#about" type="primary" router={false}>
+              ABOUT ME
+            </ActionLink>
           </div>
         </header>
       </div>
