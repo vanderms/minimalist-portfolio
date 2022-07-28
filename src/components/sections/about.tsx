@@ -1,8 +1,11 @@
 import { ActionLink } from "../buttons/action-link";
+import { useId } from "react";
 
 export function AboutSection() {
+  const id = useId();
+
   return (
-    <section className="pt-14 md:pt-24 xl:mt-[3.375rem]" id="about">
+    <section className="pt-14 md:pt-24 xl:mt-[3.375rem]" id="about" aria-labelledby={id}>
       <div className="container grid grid-cols-1 md:grid-cols-[281fr,339fr] md:gap-[4.3125rem] xl:grid-cols-[33.75rem,21.25rem] xl:gap-[7.8125rem]">
         <picture className="relative pb-[111.2540193%] md:pb-[213.5231317%] xl:pb-[111.1111111%]">
           <source
@@ -20,7 +23,9 @@ export function AboutSection() {
           />
         </picture>
         <header className="py-8 mt-8 border-y border-[#33323D26] md:mt-0 md:py-[3.125rem]">
-          <h2 className="title-md text-neutral-800">About Me</h2>
+          <h2 id={id} className="title-md text-neutral-800">
+            About Me
+          </h2>
           <p className="body-md text-neutral-500 mt-7">
             I&apos;m a junior front-end developer looking for a new role in an exciting
             company. I focus on writing accessible HTML, using modern CSS practices and
