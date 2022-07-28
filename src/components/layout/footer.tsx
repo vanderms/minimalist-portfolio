@@ -14,7 +14,7 @@ const LinkItem: React.FC<{ to: string; children: React.ReactNode }> = (props) =>
   );
 };
 
-const SocialMediaItem: React.FC<{
+export const SocialMediaItem: React.FC<{
   href: string;
   aria: string;
   children: React.ReactNode;

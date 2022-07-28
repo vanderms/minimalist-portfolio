@@ -1,3 +1,9 @@
+import { GetInTouch } from "@/components/sections/get-in-touch";
+
 export function ContactPage() {
-  return <main>Contact</main>
+  return (
+    <main>
+      <GetInTouch />
+    </main>
+  );
 }
