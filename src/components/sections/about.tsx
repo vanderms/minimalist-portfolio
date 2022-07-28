@@ -22,7 +22,7 @@ export function AboutSection() {
             className="absolute top-0 left-0 w-full h-full object-cover object-center"
           />
         </picture>
-        <header className="py-8 mt-8 border-y border-[#33323D26] md:mt-0 md:py-[3.125rem]">
+        <header className="py-8 mt-8 border-y border-[#33323D26] md:mt-0 md:py-[3.125rem] xl:pb-[2.875rem]">
           <h2 id={id} className="title-md text-neutral-800">
             About Me
           </h2>
