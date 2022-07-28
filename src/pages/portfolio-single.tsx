@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { NotFound } from "./not-found";
 import { ProjectBackgroundSection } from "@/components/sections/project-bakground";
 import { ProjectPreviewSection } from "@/components/sections/project-preview";
+import { CallToActionSection } from "@/components/sections/call-to-action";
+import { ProjectNavegationSection } from "@/components/sections/project-navegation";
 
 export function PortfolioSinglePage() {
   const params = useParams();
@@ -38,8 +40,10 @@ export function PortfolioSinglePage() {
         </picture>
         <ProjectCoverSection project={project} />
         <ProjectBackgroundSection project={project} />
-        <ProjectPreviewSection project={project}/>
+        <ProjectPreviewSection project={project} />
       </div>
+      <ProjectNavegationSection project={project} />
+      <CallToActionSection />
     </main>
   );
 }

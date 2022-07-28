@@ -20,7 +20,7 @@ export function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <nav>
+    <nav aria-label="primary">
       <div className="container relative pt-8 flex justify-between items-center md:pt-16">
         <Link to="/" aria-label="Homepage">
           <img src="/assets/logo.svg" alt="" />
