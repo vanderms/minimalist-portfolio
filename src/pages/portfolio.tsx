@@ -1,10 +1,10 @@
 import { CallToActionSection } from "@/components/sections/call-to-action";
-import ProjectsSection from "@/components/sections/projects";
+import { ProjectsListSection } from "@/components/sections/projects-list";
 
 export function PortfolioPage() {
   return (
     <main>
-      <ProjectsSection />
+      <ProjectsListSection />
       <CallToActionSection />
     </main>
   );

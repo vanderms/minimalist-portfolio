@@ -6,6 +6,7 @@ interface Props {
   router: boolean;
   to: string;
   children: React.ReactNode;
+  blank?: boolean;
 }
 
 const PrimaryStructure: React.FC<Props> = (props) => {
@@ -49,6 +50,11 @@ const PrimaryLink: React.FC<Props> = (props) => {
 };
 
 const SecondaryLink: React.FC<Props> = (props) => {
+  const target = {
+    target: props.blank ? "_blank" : undefined,
+    rel: props.blank ? "noopener noreferrer" : undefined,
+  };
+
   if (props.router) {
     return (
       <Link
@@ -63,6 +69,7 @@ const SecondaryLink: React.FC<Props> = (props) => {
     <a
       href={props.to}
       className="h-12 w-max px-9 flex items-center text-[0.75rem] text-neutral-800 border border-neutral-800 hover:bg-neutral-800 hover:text-neutral-50"
+      {...target}
     >
       {props.children}
     </a>

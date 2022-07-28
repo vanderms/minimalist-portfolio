@@ -2,7 +2,7 @@ import { useId } from "react";
 import { useProjects } from "@/hooks/use-projects";
 import { ProjectCard } from "../cards/project-card";
 
-export default function ProjectsSection() {
+export function ProjectsListSection() {
   const id = useId();
   const { projects } = useProjects();
 
