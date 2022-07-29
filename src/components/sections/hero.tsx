@@ -26,7 +26,7 @@ export function HeroSection() {
             Hey, I&apos;m Alex Spencer and I love building beautiful websites
           </h1>
           <div className="mt-8 md:mt-12 xl:mt-[3.3125rem]">
-            <ActionLink to="/#about" type="primary" router={false}>
+            <ActionLink to="#about" type="primary" router={false}>
               ABOUT ME
             </ActionLink>
           </div>
